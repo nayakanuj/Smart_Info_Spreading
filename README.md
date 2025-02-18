@@ -2,6 +2,8 @@
 
 This repository is based on the paper - [Smart Information Spreading for Opinion Maximization in Social Networks](https://ieeexplore.ieee.org/document/8737538). 
 
+ArXiv version: [https://arxiv.org/pdf/1901.00209](https://arxiv.org/pdf/1901.00209)
+
 ## TL;DR:
 
 This paper introduces a novel approach to opinion maximization in social networks by leveraging smart information spreading instead of simply identifying influential nodes. Using a dynamic Bayesian network (DBN), the problem is framed as a sequential decision process, where one source injects information strategically and others randomly. The study develops centralized and decentralized versions of Q-learning algorithms to approximate solutions and, through simulations, shows that smart spreading significantly outperforms random spreading, even when placed at a disadvantageous position in the network. 
