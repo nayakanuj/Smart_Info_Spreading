@@ -1,5 +1,4 @@
 # Smart Information Spreading for Opinion Maximization in Social Networks.
-# Smart Information Spreading for Opinion Maximization in Social Networks.
 
 This repository is based on the paper - [Smart Information Spreading for Opinion Maximization in Social Networks](https://ieeexplore.ieee.org/document/8737538). 
 
