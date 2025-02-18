@@ -39,3 +39,15 @@ python qopin_wrapper.py
 
 ![Facebook Ego Network: Smart vs Random Information Spreading](Figures/FB_ego_random_vs_smart_info_spread.png)
 *Comparison between smart and random information spreading in Facebook Ego network [[Ref](https://snap.stanford.edu/data/egonets-Facebook.html)]. Decentralized version of Q-learning algorithm for smart information spreading performs well particularly in clustered graphs.*
+
+If found useful, please cite as:
+```sh
+@inproceedings{nayak2019smart,
+  title={Smart information spreading for opinion maximization in social networks},
+  author={Nayak, Anuj and Hosseinalipour, Seyyedali and Dai, Huaiyu},
+  booktitle={IEEE INFOCOM 2019-IEEE Conference on Computer Communications},
+  pages={2251--2259},
+  year={2019},
+  organization={IEEE}
+}
+```
