@@ -7,13 +7,13 @@ iterList = [0]
 sim = {}
 Params = {}
 sim['savePath']             = "simRes"
-sim['saveFileNameHead']     = "2018_04_08"
+sim['saveFileNameHead']     = "2024_18_02"
 #Params['graphName']        = 'grid2d'
-#Params['graphName']        = 'rgg'
-Params['graphName']         = 'pa'
+Params['graphName']        = 'rgg'
+# Params['graphName']         = 'pa'
 #Params['graphName']        = 'er'
-Params['genGraphFlg']       = False
-#Params['genGraphFlg']      = True
+# Params['genGraphFlg']       = False
+Params['genGraphFlg']      = True
 Params['eta']               = 0.   
 Params['xi']                = 1.
 Params['tauMax']            = 10
@@ -21,17 +21,27 @@ Params['blfBatchSize']      = 15
 Params['numPts']            = 100
 Params['qLrnEn']       = False
 #Params['qLrnEn']       = True
+Params['saveSimresFlg'] = False
 
 
 print(Params['graphName'])
 
 
 if Params['graphName'] == 'rgg':
-    Params['numNodes']	= 1000
-    Params['rggRad']	= 0.07
-    Params['numRounds']	= Params['numPts']*Params['blfBatchSize']
-    Params['srcRNode']	= 700
-    Params['srcQNode']	= 800
+    # Params['numNodes']	= 1000
+    # Params['rggRad']	= 0.07
+    # Params['numRounds']	= Params['numPts']*Params['blfBatchSize']
+    # Params['srcRNode']	= 700
+    # Params['srcQNode']	= 800
+    # Params['learnRate']	= 0.01
+    # Params['gammaVal']	= 0.9
+    # Params['tempVal']	= 0.1
+
+    Params['numNodes']	= 500
+    Params['rggRad']	= 0.1
+    Params['numRounds']	= 500
+    Params['srcRNode']	= 10
+    Params['srcQNode']	= 490
     Params['learnRate']	= 0.01
     Params['gammaVal']	= 0.9
     Params['tempVal']	= 0.1
@@ -109,3 +119,4 @@ for indIter in iterList:
     qopin_tb(sim, Params) 
 
 
+brkpnt1 = 1

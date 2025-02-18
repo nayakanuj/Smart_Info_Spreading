@@ -59,7 +59,7 @@ def gen_graph(Params):
 
     # Random Geometric Graph
     elif Params['graphName'] == 'rgg':
-        g = nx.random_geometric_graph(Params['numNodes'], radius = Params['rggRad'])
+        g = nx.random_geometric_graph(Params['numNodes'], radius = Params['rggRad'], seed=0)
         # graph as neighbor list
         gn = {}
         nnList = []

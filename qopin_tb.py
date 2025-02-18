@@ -278,10 +278,11 @@ def qopin_tb(sim, Params):
         #    pdb.set_trace()
 
 
-    dumpVarNames = ['opinionList', 'opinionListOppon','blfMatAllRnd','cntraltyEigVec']
-    dumpVarVals = [opinionList, opinionListOppon, blfMatAllRnd, cntraltyEigVec]
+    if Params['saveSimresFlg'] == True:
+        dumpVarNames = ['opinionList', 'opinionListOppon','blfMatAllRnd','cntraltyEigVec']
+        dumpVarVals = [opinionList, opinionListOppon, blfMatAllRnd, cntraltyEigVec]
     
-    save_results_qopin(sim, Params, dumpVarNames, dumpVarVals)
+        save_results_qopin(sim, Params, dumpVarNames, dumpVarVals)
 
     plt.figure(2)
     plt.plot(opinionList, linewidth=4, markersize=10, label='opinion-1')
@@ -321,6 +322,11 @@ def qopin_tb(sim, Params):
     plt.yticks(fontsize=24)
     plt.legend(fontsize=20)
     #plt.ylim((140, 360))
+    plt.show()
+    plt.show(block=False)
+
+    plt.figure(4)
+    visualize_graph(gnx, g, blfMat, pos, Params)
     plt.show()
     plt.show(block=False)
 
